@@ -1,0 +1,96 @@
+:root {
+	--white: #FFFFFF;
+	--black: #000000;
+	/* purple es el hospital */
+	--purple-light: #962BB5;
+	--text-input-field: #eeeded;
+	--very-light-pink: #C7C7C7;
+	--sml: 14px;
+	--med: 16px;
+	--lar: 18px;
+}
+
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+.login{
+	width: 100%;
+	height:100vh;
+	display: grid;
+	place-items: center;
+}
+
+.form-container{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	width: 300px;
+}
+
+.logo{
+	width: 250px;
+	height: 120px;
+	margin-bottom: 48px;
+	justify-self: center;
+	display: none;
+}
+
+.title {
+	font-size: var(--lar);
+	margin-bottom: 39px;
+	text-align: start;
+}
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.form div {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	font-size: var(--med);
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.value {
+	color: var(--very-light-pink);
+	font-size: var(--med);
+	padding: 5px;
+	margin: 8px 0 32px 0;
+	border: 2px solid var(--purple-light);
+	border-radius: 10px;
+}
+
+.secondary-button{
+	background-color: var(--white);
+	border-radius: 8px;
+	border: 1px solid var(--purple-light);
+	color: var(--purple-light);
+	width: 100%;
+	cursor: pointer;
+	font-size: var(--med);
+	font-weight: bold;
+	height: 50px;
+}
+
+.login-button {
+	margin-top: 14px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+	.form-container {
+		height: 100%;
+	}
+	.form {
+		height: 100%;
+		justify-content: space-between;
+	}
+}
